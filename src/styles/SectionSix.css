@@ -1,30 +1,29 @@
-/* Marquee.css */
 
-/* Container to ensure proper alignment */
+/* Container to ensure proper alignment 
 .marquee-container {
     overflow: hidden;
     white-space: nowrap;
     position: relative;
-    color: white; /* Text color */
+    color: white; /* Text color 
     font-size: 1.5rem;
-    margin: 20px auto; /* Center the marquee with margin */
+    margin: 20px auto; /* Center the marquee with margin 
     display: flex;
     flex-direction: column;
   }
   
-  /* Scrolling content */
+  /* Scrolling content 
   .marquee {
 
     display: inline-block;
-    animation: scroll-left 26s linear infinite; /* Adjusted for smooth scrolling */
+    animation: scroll-left 26s linear infinite; Adjusted for smooth scrolling 
   }
-  .marquee2 {
+  /* .marquee2 {
     display: inline-block;
-    animation: scroll-right 26s linear infinite; /* Adjusted for smooth scrolling */
-  }
+    animation: scroll-right 26s linear infinite; /* Adjusted for smooth scrolling 
+  } 
   
-  /* Scroll animation */
-  @keyframes scroll-left {
+   Scroll animation */
+  /* @keyframes scroll-left {
     from {
       transform: translateX(100%);
     }
@@ -40,4 +39,4 @@
       transform: translateX(100%);
     }
   }
-  
+   */
