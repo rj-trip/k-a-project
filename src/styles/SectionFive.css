@@ -1,0 +1,64 @@
+/* .section-five {
+    padding: 50px;
+    background-color: black;
+    color: white;
+    text-align: center;
+  }
+  
+  .section-five h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .section-five p {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+   */
+
+   .section-five {
+    display: flex;
+    right: 0%;
+    background-color: #000;
+    padding: 80px 0;
+  }
+  
+
+  /* .section-five-heading {
+    font-size: 36px;
+    font-weight: bold;
+    /* margin-bottom: 10px; */
+    /* background: linear-gradient(to right, #4CAF50, #2196F3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+   
+  .action{
+    position: absolute;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .section-five-subheading {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 0;
+        background: linear-gradient(to right, #e77811, #f0f03b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  /* .section-five-button {
+    display: inline-block;
+    background-color: #FFC107;
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 24px;
+    border-radius: 24px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  } */
+  
+  /* .section-five-button:hover {
+    background-color: #FFD54F;
+  } */
