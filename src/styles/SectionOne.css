@@ -36,7 +36,13 @@
     text-align: center;
     color: white;
   }
-  
+  .div1,.div2{
+margin: 50px auto;
+  }
+  .img1 ,.img2{
+    width: 7rem;
+    border-radius: 50%;
+  }
   .content h1 {
     font-size: 6rem;
     margin-bottom: 20px;

@@ -21,7 +21,8 @@
 
 import React from "react";
 import "../styles/SectionTwo.css";
-import img1 from "./img1.jpg";
+import img1 from "./img1.png";
+import { motion } from "framer-motion";
 function SectionTwo() {
   return (
     <section className="section-two">
@@ -40,8 +41,19 @@ function SectionTwo() {
         </p>
       </div>
       <div className="image">
-        <img
+        <motion.img
           src={img1}
+          drag={true}
+          dragConstraints={{
+            top: -90,
+            left: -90,
+            right: -90,
+            bottom: -90,
+            contain: "center",
+            inertia: 0.5,
+            precision: 0.01,
+          }}
+          dragElastic={0.95}
           alt="Creative Designers, Insightful Strategists, and Exceptional Engineers"
           className="section-two-image"
         />
