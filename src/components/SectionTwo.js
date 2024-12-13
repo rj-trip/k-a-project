@@ -58,7 +58,11 @@ function SectionTwo() {
         <motion.p
           initial={{ x: -100 }}
           animate={hovering ? { x: -1000 } : { x: 0 }}
-          transition={{ ease: [0.22, 1, 0.36, 1] }}
+          transition={{
+            ease: [0.22, 1, 0.36, 1],
+            duration: "1.5",
+            delay: "0.5",
+          }}
           className="section-two-description"
         >
           The organization is focused on foregrounding expertise in its

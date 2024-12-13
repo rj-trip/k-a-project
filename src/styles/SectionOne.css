@@ -2,7 +2,7 @@
   height: 80vh; /* Occupy most of the viewport height */
   background-color: black; /* Black background for contrast */
   display: flex;
-  flex-direction: column; /* Stack elements vertically */
+  flex-direction: row; /* Stack elements vertically */
   justify-content: center; /* Center elements vertically */
   align-items: center; /* Center elements horizontally */
   text-align: center; /* Center text alignment */
