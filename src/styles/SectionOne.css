@@ -1,76 +1,86 @@
-/* .section-one {
-    background-color: black;
-    color: white;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-  
-  .section-one h1 {
-    font-size: 3rem;
-    line-height: 1.5;
-    font-weight: bold;
-    animation: fadeIn 2s ease-in-out;
-  }
-  
-  @keyframes fadeIn {
-    0% {
-      opacity: 0;
-      transform: translateY(-20px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-   */
+.section-one {
+  height: 80vh; /* Occupy most of the viewport height */
+  background-color: black; /* Black background for contrast */
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: center; /* Center elements vertically */
+  align-items: center; /* Center elements horizontally */
+  text-align: center; /* Center text alignment */
+  color: white; /* White text for readability */
+  padding: 20px; /* Add padding to prevent content from touching edges */
+  box-sizing: border-box; /* Include padding in total size */
+}
 
-   .section-one {
-    height: 80vh;
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white;
+.div1,
+.div2 {
+  margin: 20px 0; /* Adjust margin for better spacing on smaller screens */
+}
+
+.img1,
+.img2 {
+  width: 6rem; /* Slightly smaller images for better responsiveness */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 50%; /* Circular shape */
+}
+
+.content h1 {
+  font-size: 4rem; /* Default font size for large screens */
+  margin-bottom: 20px;
+  line-height: 1.2; /* Adjust line height for readability */
+}
+
+.gradient-text {
+  background: linear-gradient(to right, #00308F, #7CB9E8, #7FFFD4, #7FFFD4);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.content p {
+  font-size: 1.2rem; /* Default font size for large screens */
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+/* Responsive Design for Tablets */
+@media (max-width: 768px) {
+  .section-one {
+    padding: 15px; /* Reduce padding */
   }
-  .div1,.div2{
-margin: 50px auto;
+
+  .img1,
+  .img2 {
+    width: 5rem; /* Smaller image size for tablets */
   }
-  .img1 ,.img2{
-    width: 7rem;
-    border-radius: 50%;
-  }
+
   .content h1 {
-    font-size: 6rem;
-    margin-bottom: 20px;
+    font-size: 3rem; /* Adjust heading size */
   }
-  
-  .gradient-text {
-    background: linear-gradient(to right ,
-    #00308F,#7CB9E8, #7FFFD4, #7FFFD4); 
-            -webkit-text-fill-color: transparent; 
-            -webkit-background-clip: text;
-    /* animation: gradient-animation 3s infinite; */
-  }
-/*   
-  @keyframes gradient-animation {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  } */
-  
+
   .content p {
-    font-size: 1.5rem;
-    font-weight: 400;
-    margin-top: 10px;
+    font-size: 1rem; /* Reduce font size for paragraphs */
   }
-  
+}
+
+/* Responsive Design for Mobile Devices */
+@media (max-width: 480px) {
+  .section-one {
+    margin-top: 50px;
+    height: auto; /* Allow height to adjust dynamically for smaller screens */
+    padding: 10px; /* Further reduce padding */
+  }
+
+  .img1,
+  .img2 {
+    width: 4rem; 
+    margin-top: 20px;/* Reduce image size further for mobile screens */
+  }
+
+  .content h1 {
+    font-size: 2.5rem; /* Smaller heading size for mobile screens */
+  }
+
+  .content p {
+    font-size: 0.9rem; /* Smaller paragraph size */
+    margin-top: 5px; /* Adjust spacing */
+  }
+}

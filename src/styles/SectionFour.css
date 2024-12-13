@@ -42,19 +42,3 @@
     }
   }
   
-  .section-four .content {
-    flex: 1;
-    color: #fff;
-    padding-left: 40px;
-  }
-  
-  .section-four-heading {
-    font-size: 36px;
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
-  
-  .section-four-description {
-    font-size: 18px;
-    line-height: 1.6;
-  }

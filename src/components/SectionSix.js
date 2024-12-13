@@ -39,6 +39,13 @@ const SectionSix = () => {
           <BsMicrosoft /> Microsoft&nbsp;&nbsp;&nbsp;
           <BsSpotify /> Spotify&nbsp;&nbsp;&nbsp;
           <SiSpacex /> SpaceX&nbsp;&nbsp;&nbsp;
+          <FaFacebookF /> Facebook&nbsp;&nbsp;&nbsp;
+          <FaTwitter /> Twitter&nbsp;&nbsp;&nbsp;
+          <FaLinkedinIn /> Linkedin&nbsp;&nbsp;&nbsp;
+          <FaYoutube /> Youtube&nbsp;&nbsp;&nbsp;
+          <BsMicrosoft /> Microsoft&nbsp;&nbsp;&nbsp;
+          <BsSpotify /> Spotify&nbsp;&nbsp;&nbsp;
+          <SiSpacex /> SpaceX&nbsp;&nbsp;&nbsp;
         </p>
       </div>
     </div>

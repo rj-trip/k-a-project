@@ -1,0 +1,14 @@
+.content {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5%; /* Added right-side margin */
+  }
+  
+  .section-four-heading {
+    font-size: 72px; /* Increased font size */
+    font-weight: bold;
+    background: white;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

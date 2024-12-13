@@ -9,6 +9,7 @@
     font-size: 1.5rem;
     margin: 20px auto; /* Center the marquee with margin */
     display: flex;
+    margin-top: 10rem;
     flex-direction: column;
   }
   

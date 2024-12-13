@@ -1,138 +1,17 @@
-/* .header {
-    padding: 100px 20px;
-    background: linear-gradient(135deg, #6c63ff, #ff6584);
-    text-align: center;
-    color: #fff;
-  }
-  
-  .header h1 {
-    font-size: 3rem;
-    line-height: 1.5;
-    font-weight: bold;
-    margin: 0;
-    animation: fadeIn 2s ease-in-out;
-  }
-  
-  @keyframes fadeIn {
-    0% {
-      opacity: 0;
-      transform: translateY(-20px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-   */
-/* 
-   .header {
-    background-color: black;
-    padding: 20px 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
-  }
-  
-  .navbar .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
-  
-  .navbar .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-  }
-  
-  .navbar .nav-links li {
-    cursor: pointer;
-  }
-  
-  .navbar .btn-login {
-    background-color: #070707;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-   */
-/* 
-   .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 50px;
-    position: fixed;
-    width: 100%;
-
-  }
-  
-  .logo-img {
-    width: 120px;
-    height: auto;
-  }
-  
-  .navbar {
-    display: flex;
-    align-items: center;
-  }
-  
-  .nav-links {
-    display: flex;
-    list-style: none;
-    gap: 30px;
-    margin-right: 20px;
-    color: white;
-  }
-  
-  .nav-links li {
-    font-size: 1rem;
-    cursor: pointer;
-    position: relative;
-  }
-  
-  .nav-links li:hover::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    background-color: white;
-    bottom: -5px;
-    left: 0;
-  }
-  
-  .btn-start {
-    background-color: #ffc107;
-    border: none;
-    color: black;
-    padding: 10px 20px;
-    font-size: 0.9rem;
-    font-weight: bold;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .btn-start:hover {
-    background-color: #ff9800;
-  }
-   */
-
-   /* Header Styles */
+/* Header Styles */
 .header {
   position: fixed; /* Fixed at the top of the page */
   top: 0;
   left: 0;
   width: 100%; /* Full-width header */
   padding: 10px 50px; /* Compact padding */
-    display: flex;
+  display: flex;
   justify-content: space-between;
   align-items: center;
   color: white;
   z-index: 1000; /* Ensures the header stays above all content */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
   transform: translateY(0); /* Default visible position */
 }
 
@@ -193,4 +72,74 @@
 
 .btn-start:hover {
   background-color: #ff9800; /* Darker orange on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .header {
+    padding: 10px 20px; /* Reduce padding for medium screens */
+  }
+  .nav-links {
+    gap: 20px; /* Reduce spacing between links */
+  }
+  .btn-start {
+    margin-right: 50px; /* Adjust margin for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: row; /* Keep elements in a single row */
+    align-items: center; /* Align items in the center */
+    justify-content: space-between; /* Ensure proper spacing */
+    padding: 10px; /* Reduce padding */
+   
+  }
+
+  .logo-img {
+    width: 100px; /* Reduce logo size */
+  }
+
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Ensure spacing between nav links and button */
+    width: 100%;
+  }
+
+  .nav-links {
+    display: none; /* Hide links initially */
+    flex-direction: column; /* Stack links vertically when shown */
+    /* gap: 10px;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 999; Ensure links are above other content */
+  }
+
+  .nav-links.active {
+    display: flex; /* Show links when the active class is added */
+  }
+
+  .btn-start {
+    margin-left: auto; /* Push the button to the right */
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-img {
+    width: 80px; /* Further reduce logo size */
+  }
+  .nav-links {
+    font-size: 0.9rem; /* Reduce font size for links */
+  }
+  .btn-start {
+    display: none;
+    font-size: 0.8rem; /* Reduce button font size */
+    padding: 8px 15px; /* Adjust button padding */
+    margin-left: auto;
+  }
 }

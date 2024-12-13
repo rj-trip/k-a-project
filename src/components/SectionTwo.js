@@ -23,24 +23,51 @@ import React from "react";
 import "../styles/SectionTwo.css";
 import img1 from "./img1.png";
 import { motion } from "framer-motion";
+import { useState } from "react";
 function SectionTwo() {
+  const [hovering, setHovering] = useState(false);
   return (
-    <section className="section-two">
+    <section
+      className="section-two"
+      onMouseEnter={() => setHovering(false)}
+      onMouseLeave={() => setHovering(true)}
+    >
       <div className="content">
-        <h2 className="section-two-heading">
+        <motion.h2
+          initial={{ x: -1000 }}
+          animate={{ x: 0 }}
+          transition={{
+            duration: "1",
+            delay: "0.2",
+          }}
+          className="section-two-heading"
+        >
           <span className="special">We are</span>
-        </h2>
-        <h3 className="section-two-heading2">
+        </motion.h2>
+        <motion.h3
+          initial={{ x: -1000 }}
+          animate={{ x: 0 }}
+          transition={{
+            duration: "1.5",
+            delay: "0.5",
+          }}
+          className="section-two-heading2"
+        >
           Creative Designers, Insightful Strategists, and Exceptional Engineers
-        </h3>
-        <p className="section-two-description">
+        </motion.h3>
+        <motion.p
+          initial={{ x: -100 }}
+          animate={hovering ? { x: -1000 } : { x: 0 }}
+          transition={{ ease: [0.22, 1, 0.36, 1] }}
+          className="section-two-description"
+        >
           The organization is focused on foregrounding expertise in its
           services, staying updated on global trends, refining domain knowledge,
           and adapting to evolving content creation arenas to effectively serve
           client brands.
-        </p>
+        </motion.p>
       </div>
-      <div className="image">
+      {/* <div className="image">
         <motion.img
           src={img1}
           drag={true}
@@ -56,6 +83,16 @@ function SectionTwo() {
           dragElastic={0.95}
           alt="Creative Designers, Insightful Strategists, and Exceptional Engineers"
           className="section-two-image"
+        />
+      </div> */}
+
+      <div className="image">
+        <motion.img
+          src={img1}
+          alt="Creative Designers, Insightful Strategists, and Exceptional Engineers"
+          className="section-two-image"
+          whileHover={{ rotate: 360, scale: 1.5 }}
+          transition={{ duration: 1, ease: "easeInOut" }}
         />
       </div>
     </section>
