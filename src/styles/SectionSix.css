@@ -2,43 +2,84 @@
 
 /* Container to ensure proper alignment */
 .marquee-container {
-    overflow: hidden;
-    white-space: nowrap;
-    position: relative;
-    color: white; /* Text color */
-    font-size: 1.5rem;
-    margin: 20px auto; /* Center the marquee with margin */
-    display: flex;
-    margin-top: 10rem;
-    flex-direction: column;
-  }
-  
-  /* Scrolling content */
-  .marquee {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  color: white; /* Text color */
+  font-size: 1.5rem;
+  margin: 20px auto; /* Center the marquee with margin */
+  display: flex;
+  margin-top: 10rem;
+  flex-direction: column;
+}
 
-    display: inline-block;
-    animation: scroll-left 26s linear infinite; /* Adjusted for smooth scrolling */
+/* Scrolling content */
+.marquee {
+  display: inline-block;
+  animation: scroll-left 26s linear infinite; /* Adjusted for smooth scrolling */
+}
+
+.marquee2 {
+  display: inline-block;
+  animation: scroll-right 26s linear infinite; /* Adjusted for smooth scrolling */
+}
+
+/* Scroll animation */
+@keyframes scroll-left {
+  from {
+      transform: translateX(100%);
   }
+  to {
+      transform: translateX(-100%);
+  }
+}
+
+@keyframes scroll-right {
+  from {
+      transform: translateX(-100%);
+  }
+  to {
+      transform: translateX(100%);
+  }
+}
+
+/* Media Queries for Responsiveness */
+
+/* For small devices (mobile screens) */
+@media (max-width: 480px) {
+  .marquee-container {
+      font-size: 1rem; /* Smaller font size for mobile */
+      margin-top: 5rem; /* Reduce top margin for mobile */
+  }
+
+  .marquee,
   .marquee2 {
-    display: inline-block;
-    animation: scroll-right 26s linear infinite; /* Adjusted for smooth scrolling */
+      animation-duration: 20s; /* Faster scrolling for small screens */
   }
-  
-  /* Scroll animation */
-  @keyframes scroll-left {
-    from {
-      transform: translateX(100%);
-    }
-    to {
-      transform: translateX(-100%);
-    }
+}
+
+/* For medium devices (tablets) */
+@media (max-width: 768px) {
+  .marquee-container {
+      font-size: 1.25rem; /* Adjust font size for tablets */
+      margin-top: 7rem; /* Slightly reduced top margin for tablets */
   }
-  @keyframes scroll-right {
-    from {
-      transform: translateX(-100%);
-    }
-    to {
-      transform: translateX(100%);
-    }
+
+  .marquee,
+  .marquee2 {
+      animation-duration: 22s; /* Slightly faster scrolling for tablets */
   }
-  
+}
+
+/* For larger devices (desktops and above) */
+@media (min-width: 769px) {
+  .marquee-container {
+      font-size: 1.5rem; /* Default font size for larger screens */
+      margin-top: 10rem; /* Keep the top margin for larger screens */
+  }
+
+  .marquee,
+  .marquee2 {
+      animation-duration: 26s; /* Default scrolling speed for larger screens */
+  }
+}

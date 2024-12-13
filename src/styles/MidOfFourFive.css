@@ -1,14 +1,102 @@
+/* .content styles */
 .content {
     display: block;
     justify-content: center;
     align-items: center;
     margin-right: 5%; /* Added right-side margin */
-  }
-  
-  .section-four-heading {
+}
+
+/* .section-four-heading styles */
+.section-four-heading {
     font-size: 72px; /* Increased font size */
     font-weight: bold;
     background: white;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For small devices (mobile screens) */
+@media (max-width: 480px) {
+    .content {
+        margin-right: 2%; /* Adjust margin for smaller screens */
+    }
+
+    .section-four-heading {
+        font-size: 36px; /* Reduce font size for mobile */
+    }
+}
+
+/* For medium devices (tablets) */
+@media (max-width: 768px) {
+    .content {
+        margin-right: 3%; /* Slightly reduce margin for tablets */
+    }
+
+    .section-four-heading {
+        font-size: 48px; /* Adjust font size for tablets */
+    }
+}
+
+/* For larger devices (desktops and above) */
+@media (min-width: 769px) {
+    .content {
+        margin-right: 5%; /* Keep original margin for large screens */
+    }
+
+    .section-four-heading {
+        font-size: 72px; /* Keep original font size for larger screens */
+    }
+}
+/* .content styles */
+.content {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5%; /* Added right-side margin */
+}
+
+/* .section-four-heading styles */
+.section-four-heading {
+    font-size: 72px; /* Increased font size */
+    font-weight: bold;
+    background: white;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For small devices (mobile screens) */
+@media (max-width: 480px) {
+    .content {
+        margin-right: 2%; /* Adjust margin for smaller screens */
+    }
+
+    .section-four-heading {
+        font-size: 36px; /* Reduce font size for mobile */
+    }
+}
+
+/* For medium devices (tablets) */
+@media (max-width: 768px) {
+    .content {
+        margin-right: 3%; /* Slightly reduce margin for tablets */
+    }
+
+    .section-four-heading {
+        font-size: 48px; /* Adjust font size for tablets */
+    }
+}
+
+/* For larger devices (desktops and above) */
+@media (min-width: 769px) {
+    .content {
+        margin-right: 5%; /* Keep original margin for large screens */
+    }
+
+    .section-four-heading {
+        font-size: 72px; /* Keep original font size for larger screens */
+    }
 }

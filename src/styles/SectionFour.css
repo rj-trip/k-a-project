@@ -1,44 +1,71 @@
-/* .section-four {
-    padding: 50px;
-    background-color: black;
-    text-align: center;
-  }
-  
-  .section-four img {
-    max-width: 80%;
-    border-radius: 10px;
-  }
-   */
+.section-four {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+  padding: 60px 20px; /* Reduced padding for smaller screens */
+  flex-wrap: wrap; /* Enable wrapping for small screens */
+}
 
-   .section-four {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #000;
-    padding: 100px 0;
+.section-four .image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  max-width: 90%; /* Limit container width for better responsiveness */
+}
+
+.section-four-image {
+  width: 100%;
+  max-width: 600px; /* Limit maximum image width */
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  animation: zoom-in 1s ease-in-out;
+}
+
+@keyframes zoom-in {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
   }
-  
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Responsive Design */
+
+/* Tablet View */
+@media (max-width: 768px) {
+  .section-four {
+    padding: 40px 10px; /* Reduce padding for tablets */
+  }
+
   .section-four .image-container {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    position: relative;
+    max-width: 80%; /* Reduce container size */
   }
-  
+
   .section-four-image {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-    animation: zoom-in 1s ease-in-out;
+    max-width: 500px; /* Adjust maximum image size */
   }
-  
-  @keyframes zoom-in {
-    0% {
-      transform: scale(0.8);
-    }
-    100% {
-      transform: scale(1);
-    }
+}
+
+/* Mobile View */
+@media (max-width: 480px) {
+  .section-four {
+    padding: 30px 5px; /* Further reduce padding */
+    flex-direction: column; /* Stack content vertically */
   }
-  
+
+  .section-four .image-container {
+    max-width: 100%; /* Allow the image to take full width */
+  }
+
+  .section-four-image {
+    max-width: 300px; /* Adjust image size for small screens */
+    border-radius: 6px; /* Slightly reduce border-radius for better scaling */
+  }
+}

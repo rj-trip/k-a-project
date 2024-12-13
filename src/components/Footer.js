@@ -119,32 +119,29 @@ function Footer() {
           <h3 className="footer-heading">Follow Us</h3>
           <ul className="footer-list">
             <li>
-              <a href="#">hello@company.com</a>
+              <a href="#">
+                Facebook
+                <FaFacebookF />
+              </a>
             </li>
             <li>
-              <a href="#">+1 (123) 456-7890</a>
+              <a href="#">
+                Twitter
+                <FaTwitter />
+              </a>
             </li>
             <li>
-              <a href="#">hello@company.com</a>
+              <a href="#">
+                Linkdin
+                <FaLinkedinIn />
+              </a>
             </li>
             <li>
-              <a href="#">+1 (123) 456-7890</a>
+              <a href="#">
+                Youtube <FaYoutube />
+              </a>
             </li>
           </ul>
-          <div className="social-icons">
-            <a href="#" className="social-icon">
-              <FaFacebookF />
-            </a>
-            <a href="#" className="social-icon">
-              <FaTwitter />
-            </a>
-            <a href="#" className="social-icon">
-              <FaLinkedinIn />
-            </a>
-            <a href="#" className="social-icon">
-              <FaYoutube />
-            </a>
-          </div>
         </div>
       </div>
       <div className="footer-bottom">
